@@ -1,4 +1,5 @@
 include <../config.scad>;
+SENSOR_PCB_MOUNT_OFFSET = 12.5; // distance in X/Y from centre
 
 function getStandoffHeight() = 
     -TRACKBALL_POSITION_Z +
@@ -67,7 +68,7 @@ module plate(
 
                 for(keyPosition = keyPositions){
                     translate([keyPosition.x + 0.5, (keyPosition.y + 0.5) * keyHeight] * 1U){
-                        if(keyPosition.z == "adns" || keyPosition.z == "pmw"){
+                        if(keyPosition.z == "pmw"){
                             translate([0, SENSOR_PCB_MOUNT_OFFSET, 0])
                                 boltHole();
                             translate([0, -SENSOR_PCB_MOUNT_OFFSET, 0])

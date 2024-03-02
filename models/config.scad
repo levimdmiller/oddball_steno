@@ -31,7 +31,7 @@ PLATE_CURVE_RADIUS = 1;
 // trackball
 
 TRACKBALL_BOLT_HOLES_DIAMETER = 32;
-TRACKBALL_DIAMETER = 24.9;
+TRACKBALL_DIAMETER = 23.9;
 TRACKBALL_PLATE_CLEARANCE = 1.5;
 TRACKBALL_PLATE_BEZEL = 7;
 TRACKBALL_BEARING_MOUNT_CLEARANCE = 1.8;
@@ -47,7 +47,7 @@ SENSOR_LENS_WIDTH = 21;
 SENSOR_LENS_HEIGHT = 22;
 SENSOR_PCB_MOUNT_OFFSET = 13.5; // distance in X/Y from centre
 SENSOR_PCB_THICKNESS = 1.5;
-SENSOR_PCB_UNDERSIDE_CLEARANCE = 21.5;
+SENSOR_PCB_UNDERSIDE_CLEARANCE = 16;
 SENDOR_TRACKBALL_CLEARANCE = 1;
 
 // PMW3360 sensor
@@ -99,6 +99,14 @@ FEET_TOLERENCE = 1.25;
 FEET_HEIGHT = 1;
 
 // layouts in 1U space
+FINGER_GRID_RIGHT =
+    [[0, 2], [.5, 2], [1, 2], [1.5, 2], [2, 2], [2.5, 2], [3, 2], [3.5, 2], [4, 2], [4.5, 2], [5, 2],
+     [0, 1], [1, 1], [2, 1], [3, 1], [4, 1], [5, 1],
+     [5, .5],
+     [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], [5, 0]];
+     
+FINGER_BOLT_HOLES_RIGHT =
+    [[.4, .2], [5.5, .25], [.35, 2.75]];
 
 FINGER_GRID = 
 [[0, 2], [.5, 2], [1, 2], [1.5, 2], [2, 2], [2.5, 2], 
@@ -134,8 +142,8 @@ THUMB_FEET_POSITIONS =
 // plane rotations
 
 HAND_ROTATION = [5, -8.5, 0];
-THUMB_ROTATION = [10, -2, -10.25];
-THUMB_OFFSET = [80.5, -22, 8.5];
+THUMB_ROTATION = [10, -8.5, -5];
+THUMB_OFFSET = [55, -30, 4];
 
 // cutouts
 

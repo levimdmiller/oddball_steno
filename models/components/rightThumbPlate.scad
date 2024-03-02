@@ -2,6 +2,11 @@ include <../config.scad>;
 use <../modules/plate.scad>;
 use <../modules/keys.scad>;
 
+
+THUMB_TRACKBALL_BOLT_HOLES = 
+    [[0.95, 0.95],
+     [0.95, 0.05]];
+
 mirror([1,0,0]){
     linear_extrude(PLATE_THICKNESS)
         plate(
